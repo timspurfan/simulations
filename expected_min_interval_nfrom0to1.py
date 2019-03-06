@@ -1,4 +1,6 @@
 '''
+Source: http://www.cseblog.com/2009/10/mean-minimum-distance-for-n-random.html
+
 Problem: pick n random numbers from 0 to 1.  
 find the expected value of the minimum interval length
 
