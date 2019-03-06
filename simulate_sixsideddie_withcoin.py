@@ -43,6 +43,8 @@ if __name__ == "__main__":
         frequency[roll-1] +=1
 
     frequency_prob = [i/num_trials for i in frequency]
+    for freq in frequency_prob:
+        assert abs(freq-1/6)<.02
     print(frequency_prob)
 
 '''
