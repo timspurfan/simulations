@@ -1,8 +1,13 @@
+'''
+#TODO: Add problem statement + solution
+'''
+
 import random
 from tqdm import tqdm
 from numpy import mean
+from math import e
 
-num_trials = 1000
+num_trials = 10**5
 results = []
 
 for trial in tqdm(range(num_trials)):
@@ -16,3 +21,5 @@ for trial in tqdm(range(num_trials)):
 
 expected = mean(results)
 print(expected)
+
+assert abs(expected-e)<.1
