@@ -1,6 +1,7 @@
 '''
 
 Source: https://fivethirtyeight.com/features/does-your-gift-card-still-have-free-drinks-on-it/
+Solution: https://fivethirtyeight.com/features/how-many-times-a-day-is-a-broken-clock-right/
 
 Problem: Lucky you! You’ve won two gift cards, each loaded with 50 free drinks from your 
 favorite coffee shop, Riddler Caffei-Nation. The cards look identical, and because you’re 
