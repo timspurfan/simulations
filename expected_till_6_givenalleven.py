@@ -23,6 +23,4 @@ for trial in tqdm(range(num_trials)):
 
 expected = mean(results)
 print(expected)
-
-
-
+print(len(results))
