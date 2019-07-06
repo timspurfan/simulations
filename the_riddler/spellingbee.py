@@ -11,12 +11,19 @@ from random import randint
 num_trials = 10**5
 num_wins = [0 for i in range(10)]
 
-for trial in tqdm(range(num_trials)):
-    players = [i for i in range(10)]
-    while len(players) > 0:
-        pass
-
-
-
 def spell_word(player:int):
-    return randint(1, 100) < (100 - (player+1))
+    return randint(1, 100) <= (player)
+
+for trial in tqdm(range(num_trials)):
+    players = [99-i for i in range(10)]
+    current_index = 0
+    while len(players) > 1:
+        if not spell_word(players[current_index]):
+            del(players[current_index])
+        current_index = (current_index + 1)%len(players)
+
+    winner = players[0]
+    num_wins[99-winner] += 1
+
+print(num_wins)
+print(num_wins[0]/num_trials)
