@@ -16,6 +16,7 @@ def spell_word(player:int):
 
 for trial in tqdm(range(num_trials)):
     players = [99-i for i in range(10)]
+    #players = list(reversed(a))
     current_index = 0
     while len(players) > 1:
         if not spell_word(players[current_index]):
